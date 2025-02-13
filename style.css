@@ -1,0 +1,228 @@
+/* DISEÑO DE ESCRITORIO*/
+/* recentear css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+h6 {
+  font-size: 17px;
+}
+a {
+  font-weight: 600;
+}
+/*body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fcf6f6;
+  /* Color del texto del cuerpo */
+  background-color: #ffffff;
+}
+
+/* Estilos para la navegacion */
+.contenedor {
+  background: rgba(139, 135, 135, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  padding: 1rem 0;
+}
+
+.navegacion__img {
+  width: 35px;
+}
+
+.nav__hijo1 {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.menu li a {
+  color: black;
+}
+.rowEnlace {
+  display: flex;
+  align-items: center;
+}
+
+/* SECCION DE BIENVENIDA*/
+#welcome {
+  background: url("images/willian-justen-de-vasconcellos-mZKEIRBStv4-unsplash.jpg")
+    /* no-repeat bottom center/cover*/;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1,
+.banner p {
+  color: #d2e2f1;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: verdana;
+}
+
+/* SECCION PRODUCTOS*/
+#product-grid {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  /* Esto hará que el contenedor se ajuste al tamaño de la pantalla */
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada tarjeta de producto */
+.product-card {
+  flex: 1;
+  /* Esto hará que los contenedores tengan el mismo tamaño */
+  margin: 1rem;
+  /* Esto añadirá un margen alrededor de cada contenedor */
+  border: 1px solid #ccc;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(235, 235, 243);
+}
+
+.product-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  /* Esto hará que la imagen cubra todo el espacio disponible, recortándola si es necesario */
+}
+
+.product-card h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.product-card p {
+  margin-bottom: 2rem;
+  color: #333333;
+  text-align: justify;
+}
+
+.product-card a {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(72, 188, 218);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.product-card a:hover {
+  color: #d0f308;
+}
+
+#destinos {
+  margin-right: 2rem;
+}
+
+#ofertas {
+  margin-left: 2rem;
+}
+
+/* SECCION DE NOTICIAS*/
+#news {
+  padding: 2rem;
+  /* Espacio alrededor de las noticias */
+}
+
+#news h2 {
+  color: #003366;
+  /* Color del título de la sección */
+}
+
+.news-container {
+  display: flex;
+  /* Esto hará que los elementos se alineen en una fila */
+  justify-content: space-between;
+  /* Esto añadirá espacio entre los elementos */
+  width: 100%;
+  /* Esto hará que el contenedor de 
+    noticias ocupe todo el ancho de la pantalla */
+}
+
+.news-item {
+  flex: 1;
+  /* Esto hará que los elementos tengan el mismo tamaño */
+  /* Espacio alrededor de cada elemento */
+  padding: 2rem;
+  /* Espacio dentro de cada elemento */
+  text-align: center;
+  /* Alinea el texto al centro */
+  background-color: rgb(235, 235, 243);
+  /* Color de fondo de los elementos de noticias */
+  width: 100%;
+  /* Esto hará que cada elemento de noticias ocupe todo el ancho del contenedor */
+}
+
+.news-item h3 {
+  color: #003366;
+  /* Color de los títulos de las noticias */
+}
+
+.news-item p {
+  color: #333333;
+  text-align: justify;
+  /* Color del texto de las noticias */
+}
+
+.news-item a {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(72, 188, 218);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  bottom: 20%;
+}
+
+.news-item a:hover {
+  color: #d0f308;
+}
+
+.news-item img {
+  width: 150px;
+  /* Ancho de la imagen */
+  height: 150px;
+  /* Alto de la imagen */
+  border-radius: 50%;
+  /* Esto hará que la imagen sea circular */
+  object-fit: cover;
+  /* Esto hará que la imagen cubra todo el espacio disponible, recortándola si es necesario */
+}

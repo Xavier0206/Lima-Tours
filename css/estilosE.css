@@ -1,0 +1,506 @@
+/** ==================== Globales ==================== */
+/*Variables y globales para un mejor CSS*/
+:root {
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  font-family: var();
+}
+ul {
+  list-style: none;
+  display: inline;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 17px;
+}
+.listas {
+  display: flex;
+  align-items: center;
+}
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+/* Contenedor */
+.container {
+  height: 450px;
+  background-size: cover;
+  background: url("../img/willian-justen-de-vasconcellos-mZKEIRBStv4-unsplash.jpg")
+    center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navegacion ↓*/
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  padding: 0 5rem;
+
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 50px 50px 50px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  margin-top: 1rem;
+  /* align-self: self-end; */
+  /* position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0; */
+}
+.navegacion__img {
+  width: 35px;
+}
+.nav__hijo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  column-gap: 3rem;
+}
+.menu a {
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 300ms ease-out;
+}
+.menu a:hover {
+  color: white;
+}
+.rowEnlace {
+  display: flex;
+  align-items: center;
+}
+/* Fin NAV ↑ */
+
+.titulo {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 20rem;
+}
+
+/* Main */
+.mainContainer {
+  background-color: rgba(235, 236, 234, 0.688);
+  /* margin-bottom: 3rem; */
+  padding-bottom: 3rem;
+}
+.tituloMain {
+  text-align: center;
+  color: black;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+/* Card */
+.cardPadre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+.centrar {
+  text-align: center;
+}
+
+.card {
+  width: 330px;
+  height: 470px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+
+  background-color: rgb(219, 215, 210);
+}
+.card img {
+  width: 300px;
+  height: 220px;
+  margin: 2rem;
+  border-radius: 8px 8px 8px;
+}
+.card h4 {
+  font-size: 25px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+
+  border-top: 1px solid #afafaf;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #afafaf;
+}
+.footerFlex {
+  display: flex;
+  flex-direction: column;
+}
+.footerFlex a {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: bisque;
+  text-align: center;
+}
+.footerLogos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+.footerColumn {
+  display: flex;
+  align-items: center;
+}
+.lineas {
+  border-left: 1px solid #afafaf;
+}
+
+/*****Estilos costa  */
+section img {
+  width: 360px;
+}
+section h2 {
+  font-size: 36px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Estilos subcosta */
+.imgtiny {
+  width: 250px;
+  border-radius: 20px;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+.espacio {
+  margin: 30px 0;
+}
+.descripcion {
+  font-size: 20px;
+}
+.containerMancora {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/mancora.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ica */
+.containerIca {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/ica.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Cuzco */
+.containerCuzco {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/cuzco.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Cajamarca */
+.containerCajamarca {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/cajamarca.webp") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* loreto */
+.containerLoreto {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/loreto.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Pucallpa */
+.containerPucallpa {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/pucallpa.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Formulario*/
+.containerForm {
+  height: 450px;
+  background-size: cover !important;
+  background: url("../img/costa.jpg") center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Nosotros (Maria Torres)*/
+.mainContainer1 {
+  background-color: rgba(235, 236, 234, 0.688);
+  padding-bottom: 1rem;
+}
+.somos,
+.nosotros {
+  width: 150px;
+  height: 150px;
+}
+div.nosotros {
+  display: flex;
+  flex-direction: row;
+}
+span h4 {
+  text-align: center;
+  font-size: 35px;
+}
+.marco {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  margin-top: 0px;
+  margin-left: 0px;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: "Times New Roman";
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cajas {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+
+  .box {
+    position: relative;
+    flex: 1 1 auto;
+    width: 20%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+
+    .text {
+      text-align: center;
+      word-spacing: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      font-size: 20px;
+      text-transform: uppercase;
+      color: rgb(54, 32, 32);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &.gray {
+      background-color: rgb(204, 205, 205);
+    }
+    &.lightgray {
+      background: rgb(219, 215, 210);
+    }
+
+    &:hover {
+      width: 100%;
+      .text {
+        color: black;
+        transform: translate(-50%, -50%) scale(0.75);
+      }
+    }
+  }
+}
+
+/* Contactanos (Matias reynoso) */
+body {
+  /* font-family: Arial, sans-serif;
+  background-image: url("../img/paisaje.jpeg");
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-size: contain;
+}
+
+.containerA {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+.submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  text-decoration: double;
+}
+
+/* Estilos reutilizables */
+/*********Estilos para los botones  */
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgb(219, 229, 28);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  transition: 700ms;
+}
+.boton:hover {
+  color: rgb(219, 229, 28);
+  background-color: rgb(68, 74, 53);
+}
+.flexColumnas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 60px;
+  margin: 30px auto;
+}
+.flexFilas {
+  display: flex;
+  flex-direction: row;
+  column-gap: 65px;
+}
+.flexFilas img {
+  border-radius: 20px;
+}
+.boton_dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.boton_dos a {
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 20px 5px 20px 5px;
+  text-align: center;
+  width: 300px;
+}
