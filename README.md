@@ -10,3 +10,6 @@ Los integrantes son:
 - Torres Soto Maria Elizabeth
 
 # Reutilizado tambien para EFSRT I
+Proyecto final de EFSRT I
+Integrante:
+- Tintaya Cortez Jhosimar Xavier
